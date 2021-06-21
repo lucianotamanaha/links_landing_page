@@ -41,6 +41,13 @@ class LinksLandingPage extends StatelessWidget {
               url: document.url,
             ),
           Spacer(),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/settings');
+            },
+            child: Text('Settings'),
+          ),
+          Spacer(),
           Footer(),
           SizedBox(height: 23),
         ],
